@@ -6,5 +6,13 @@ package com.sky.eyepetizer.constant;
 
 public class Constants {
 
+    /**
+     * 开发模式 true
+     * 生产模式 false
+     */
+    public static final boolean IS_DEBUG_MODE = true;
+    /**
+     * API 基地址
+     */
     public static final String BASE_URL = "http://baobab.wandoujia.com/api/";
 }
