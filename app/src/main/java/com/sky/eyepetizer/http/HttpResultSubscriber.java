@@ -12,11 +12,6 @@ public abstract class HttpResultSubscriber<T> extends
         Subscriber<HttpResult<T>> {
 
     @Override
-    public void onCompleted() {
-
-    }
-
-    @Override
     public void onError(Throwable e) {
         onFail(e);
     }

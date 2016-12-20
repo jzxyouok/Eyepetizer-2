@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:tools="http://schemas.android.com/tools"
-          package="com.sky.eyepetizer">
+<manifest package="com.sky.eyepetizer"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-sdk tools:overrideLibrary="io.vov.vitamio"/>
 
     <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-sdk tools:overrideLibrary="io.vov.vitamio"></uses-sdk>
 
     <application
         android:name=".App"
@@ -22,6 +23,8 @@
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name=".mvp.WelcomeActivity">
         </activity>
     </application>
 
